@@ -1,0 +1,33 @@
+.app-container {
+  min-height: 100vh;
+  background: var(--paper);
+  display: flex;
+  flex-direction: column;
+}
+
+.app-main {
+  flex: 1;
+}
+
+.site-footer {
+  background: var(--footer);
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.site-footer p {
+  margin: 0.2rem 0;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: var(--paper);
+  color: var(--text);
+  font-size: 1.1rem;
+}

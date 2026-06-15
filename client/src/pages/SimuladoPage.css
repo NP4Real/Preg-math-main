@@ -1,0 +1,241 @@
+.simulado-page {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.simulado-box-wrapper {
+  width: 100%;
+  max-width: 650px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.simulado-box-header {
+  background: #ff7a00;
+  padding: 2rem;
+  text-align: center;
+}
+
+.simulado-box-header h1 {
+  margin: 0;
+  color: white;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.simulado-box-body {
+  background: #fbdec0;
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+:root[data-theme='dark'] .simulado-box-body {
+  background: #232c32;
+  color: white;
+}
+
+.simulado-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.simulado-field label {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+:root[data-theme='dark'] .simulado-field label {
+  color: #f1f5f9;
+}
+
+.custom-input {
+  width: 100%;
+  padding: 0.8rem 1.2rem;
+  border: 3px solid #ff7a00;
+  border-radius: 999px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: rgba(255,255,255,0.4);
+  color: #333;
+  box-shadow: 0 4px 0px #cf6300;
+  outline: none;
+}
+
+.custom-input::placeholder {
+  color: #64748b;
+}
+
+:root[data-theme='dark'] .custom-input {
+  background: #4a5c6a;
+  color: white;
+  border-color: #ff7a00;
+  box-shadow: 0 4px 0px #cf6300;
+}
+
+:root[data-theme='dark'] .custom-input::placeholder {
+  color: #cbd5e1;
+}
+
+.quantity-options {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.qty-ex {
+  padding: 0.8rem 1.2rem;
+  border: 3px solid #ff7a00;
+  border-radius: 999px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  background: rgba(255,255,255,0.4);
+  color: #333;
+  box-shadow: 0 4px 0px #cf6300;
+  user-select: none;
+}
+
+:root[data-theme='dark'] .qty-ex {
+  background: #232c32;
+  color: #f1f5f9;
+}
+
+.qty-btn {
+  padding: 0.8rem 1.4rem;
+  border: 3px solid #ff7a00;
+  border-radius: 999px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  background: #e39d5e;
+  color: #333;
+  box-shadow: 0 4px 0px #cf6300;
+  cursor: pointer;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.qty-btn:active {
+  transform: translateY(4px);
+  box-shadow: 0 0 0px #cf6300;
+}
+
+:root[data-theme='dark'] .qty-btn {
+  background: #a96732;
+  color: white;
+}
+
+.qty-btn.selected {
+  background: #ff7a00;
+  color: white;
+}
+
+.vest-options {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.vest-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.custom-checkbox {
+  width: 24px;
+  height: 24px;
+  border: 3px solid #ff7a00;
+  border-radius: 4px;
+  background: #e39d5e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 0px #cf6300;
+}
+
+:root[data-theme='dark'] .custom-checkbox {
+  background: #a96732;
+}
+
+.custom-checkbox input {
+  display: none;
+}
+
+.custom-checkbox.checked::after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  border-radius: 2px;
+}
+
+.vest-icon {
+  height: 36px;
+  width: auto;
+  object-fit: contain;
+}
+
+.vest-label {
+  font-weight: 800;
+  font-size: 1.3rem;
+  color: #000;
+}
+
+:root[data-theme='dark'] .vest-label {
+  color: white;
+}
+
+.simulado-submit-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.simulado-submit-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #ff7a00;
+  color: #000;
+  border: 2px solid #a34e00;
+  padding: 0.8rem 2rem;
+  border-radius: 12px;
+  font-size: 1.8rem;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 4px 0px #a34e00;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+:root[data-theme='dark'] .simulado-submit-btn {
+  color: white;
+}
+
+.simulado-submit-btn:active {
+  transform: translateY(4px);
+  box-shadow: 0 0 0px #a34e00;
+}
+
+.questions-list {
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+  max-width: 900px;
+}
+
+.form-message {
+  color: #ff0000;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 1rem;
+}

@@ -1,0 +1,49 @@
+:root {
+  --orange: #ff7900;
+  --orange-dark: #df6900;
+  --paper: #ffffff;
+  --surface: #dddddd;
+  --surface-strong: #f8cfa8;
+  --text: #161616;
+  --muted: #5b5b5b;
+  --footer: #120800;
+  --line: #b9b9b9;
+  --success: #35d47e;
+  --danger: #f05245;
+}
+
+:root[data-theme='dark'] {
+  --paper: #10181b;
+  --surface: #1d2a30;
+  --surface-strong: #e6d8b8;
+  --text: #f4efe7;
+  --muted: #d2bea4;
+  --footer: #0f0700;
+  --line: #33464f;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--paper);
+  color: var(--text);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+}
