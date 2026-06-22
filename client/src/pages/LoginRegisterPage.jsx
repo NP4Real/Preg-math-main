@@ -175,7 +175,7 @@ export default function LoginRegisterPage() {
                 required
                 disabled={loading}
               />
-
+{/*TXT */}
             </div>
 
             {/* Botão responsável por enviar o formulário */}
